@@ -23,7 +23,7 @@
               <h1 class="flash"><span id="flashResult"></span></h1>
               <input id ="numberInput" type="number" class="form-control" placeholder="Enter a whole number here:" required>
             </div>
-            <button type="submit" class="btn-primary">Submit!</button>
+            <button type="submit" class="btn-default">Submit!</button>
           </form>
           <div id="logDiv">
             <h4>Your result:</h4>
@@ -38,8 +38,10 @@
           <h2>G</h2>
         </div>
       </div> <!-- end row -->
-      <p>Click <span id="here">here</span> to see a range of numbers from one to your number:</p>
-      <p><span id="range"></span></p>
+      <p><span class="clickable">Click here to see a range of numbers from one to your number:</span></p>
+      <div class="initially-hidden">
+        <p><span id="range"></span></p>
+      </div>
     </div>
   </body>
 </html>
