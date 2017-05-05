@@ -60,6 +60,8 @@ $(document).ready(function() {
     $("#log").text(singleResult);
     $("#flashResult").text(singleResult);
     $("#range").text(rangeResult);
+    $("#flashResult").show();
+    $("#flashResult").fadeOut(500);
   });
 
 });
