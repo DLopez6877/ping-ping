@@ -4,11 +4,28 @@ body {
   color: white;
 }
 
+/*flash area*/
 .flash {
   height: 150px;
   font-size: 140px;
 }
 
+/*log*/
+#logDiv {
+  height: 60px;
+}
+
+/*side panels*/
+h2 {
+  font-size: 55px;
+}
+
+/*center column */
+.center-column {
+  background-image: url(../img/pong.gif);
+  background-size: cover;
+  border: medium solid white;
+}
 @media screen and (max-width: 1100px)  {
   .flash {
     font-size: 75px;
