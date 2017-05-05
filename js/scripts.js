@@ -68,13 +68,13 @@ $(document).ready(function() {
       $(".ping-panel").toggleClass("blue");
       setTimeout(function () {
         $(".ping-panel").toggleClass("blue");
-      }, 600);
+      }, 1100);
     }
     if ( singleResult === "PONG") {
       $(".pong-panel").toggleClass("blue");
       setTimeout(function () {
         $(".pong-panel").toggleClass("blue");
-      }, 600);
+      }, 1100);
     }
     if (singleResult === "PING-PONG") {
       $(".ping-panel").toggleClass("blue");
@@ -82,7 +82,7 @@ $(document).ready(function() {
       setTimeout(function () {
         $(".ping-panel").toggleClass("blue");
         $(".pong-panel").toggleClass("blue");
-      }, 600);
+      }, 1100);
   }
 
   });
