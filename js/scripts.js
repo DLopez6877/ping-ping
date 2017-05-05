@@ -1,15 +1,30 @@
 // Business Logic (Back-end)
+var counter = function(userInput) {
+  var result = [];
+  for ( var index = 1 ; index <= userInput; index + 1 ) {
+    result.push(index);
+  }
+  return result;
+  console.log(result);
+}
+
 
 var pingPong = function(userInput) {
-  if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
-    userInput = "PING";
-  } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
+
+  output = counter(userInput);
+
+  // for (var index = 1; index <= userInput; index + 1 ) {
+    if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
+      userInput = "PING";
+    } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
       userInput = "PONG";
-  } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
+    } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
       userInput = "PING-PONG";
-  } else {
-      return userInput
-  }
+    } else {
+      result.push(userInput);
+    }
+    result.push(userInput);
+  // }
 
   return userInput;
 }
@@ -27,7 +42,8 @@ $(document).ready(function() {
     var userInput = parseInt($("input#numberInput").val());
     var result = pingPong(userInput);
     $("#log").prepend("<li>" + result + "</li>");
-    cleanLog();
+    // $("#flashResult").text(result);
+    // cleanLog();
   });
 
 });
