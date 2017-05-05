@@ -8,6 +8,9 @@
 // };
 
 var pingPong = function(userInput) {
+  if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
+    userInput = "PING";
+  }
   return userInput;
 }
 
