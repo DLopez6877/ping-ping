@@ -1,16 +1,12 @@
 // Business Logic (Back-end)
-// var leapYear = function(year) {
-//   if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
 
 var pingPong = function(userInput) {
   if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
     userInput = "PING";
+  } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
+      userInput = "PONG";
   }
+
   return userInput;
 }
 
