@@ -25,6 +25,11 @@ h2 {
   font-family: 'Coda Caption', sans-serif;
 }
 
+.blue {
+  color: #46b8da;
+}
+
+
 /*center column */
 .center-column {
   background-image: url(../img/pong.gif);

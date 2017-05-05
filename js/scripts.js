@@ -63,6 +63,28 @@ $(document).ready(function() {
     $("#flashResult").show();
     $("#flashResult").fadeOut(1000);
     $("#click-here").show();
+
+    if ( singleResult === "PING") {
+      $(".ping-panel").toggleClass("blue");
+      setTimeout(function () {
+        $(".ping-panel").toggleClass("blue");
+      }, 600);
+    }
+    if ( singleResult === "PONG") {
+      $(".pong-panel").toggleClass("blue");
+      setTimeout(function () {
+        $(".pong-panel").toggleClass("blue");
+      }, 600);
+    }
+    if (singleResult === "PING-PONG") {
+      $(".ping-panel").toggleClass("blue");
+      $(".pong-panel").toggleClass("blue");
+      setTimeout(function () {
+        $(".ping-panel").toggleClass("blue");
+        $(".pong-panel").toggleClass("blue");
+      }, 600);
+  }
+
   });
 
   $(".see-range").click(function(event) {
