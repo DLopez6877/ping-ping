@@ -27,6 +27,7 @@ _This website allows the user to submit a number and if that number is divisible
 |Convert a number divisible by 3 into ping|3|PING|
 |Convert a number divisble by 5 into pong|5|PONG|
 |Convert a number divisble by both 3 and 5 into ping-pong|15|PING-PONG|
+|Display a range of numbers from one to submitted number with conversions|6|1, 2, PING, 4, PONG, 6|
 
 ## Known Bugs
 
