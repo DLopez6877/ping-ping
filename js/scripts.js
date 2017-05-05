@@ -34,15 +34,15 @@ var pingPong = function(userInput) {
 
   if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
     userInput = "PING";
-    return " " + userInput;
+    return userInput;
   } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
     userInput = "PONG";
-    return " " + userInput;
+    return userInput;
   } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
     userInput = "PING-PONG";
-    return " " + userInput;
+    return userInput;
   } else {
-    return " " + userInput;
+    return userInput;
   }
 
   return result;
@@ -51,19 +51,14 @@ var pingPong = function(userInput) {
 // User Interface Logic (Front-end) below this point
 $(document).ready(function() {
 
-  var cleanLog = function() {
-    $("#log li:nth-child(6)").remove();
-  };
-
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#numberInput").val());
     var singleResult = pingPong(userInput);
     var rangeResult = pingPongRange(userInput);
 
-    $("#log").prepend("<li>" + singleResult + "</li>");
+    $("#log").text(singleResult);
     $("#flashResult").text(singleResult);
-    cleanLog();
     $("#range").text(rangeResult);
   });
 
