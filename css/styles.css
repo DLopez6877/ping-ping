@@ -4,6 +4,11 @@ body {
   color: white;
 }
 
+#header {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 60px;
+}
+
 .initially-hidden {
   display: none;
 }
@@ -30,6 +35,11 @@ h2 {
 /*log*/
 #logDiv {
   height: 60px;
+}
+
+#logDiv h4 {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 25px;
 }
 
 /*range display*/

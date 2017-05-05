@@ -63,7 +63,6 @@ $(document).ready(function() {
     $("#flashResult").show();
     $("#flashResult").fadeOut(500);
     $("#click-here").show();
-    $(".see-hide").text("SEE");
   });
 
   $(".see-range").click(function(event) {
