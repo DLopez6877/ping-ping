@@ -61,7 +61,7 @@ $(document).ready(function() {
     $("#flashResult").text(singleResult);
     $("#range").text(rangeResult);
     $("#flashResult").show();
-    $("#flashResult").fadeOut(500);
+    $("#flashResult").fadeOut(1000);
     $("#click-here").show();
   });
 
