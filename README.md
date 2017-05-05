@@ -13,12 +13,12 @@ _This website allows the user to submit a number and if that number is divisible
 * _Click on gh-pages link below_
 * _or_
 * _Clone Repository_
-* _Open "ping-pong" repository_
+* _Open "ping-ping" repository_
 * _Open index.html_
 
 ## gh-pages link
 
-[click here](https://dlopez6877.github.io/ping-pong)
+[click here](https://dlopez6877.github.io/ping-ping)
 
 ## Specs
 
