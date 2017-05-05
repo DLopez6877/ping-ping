@@ -7,7 +7,7 @@ var counter = function(userInput) {
   return result;
 }
 
-var pingPong = function(userInput) {
+var pingPongRange = function(userInput) {
 
   var userInputs = counter(userInput);
 
@@ -30,6 +30,24 @@ var pingPong = function(userInput) {
   return result;
 }
 
+var pingPong = function(userInput) {
+
+  if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
+    userInput = "PING";
+    return " " + userInput;
+  } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
+    userInput = "PONG";
+    return " " + userInput;
+  } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
+    userInput = "PING-PONG";
+    return " " + userInput;
+  } else {
+    return " " + userInput;
+  }
+
+  return result;
+}
+
 // User Interface Logic (Front-end) below this point
 $(document).ready(function() {
 
@@ -40,10 +58,13 @@ $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#numberInput").val());
-    var result = pingPong(userInput);
-    $("#log").prepend("<li>" + result + "</li>");
-    // $("#flashResult").text(result);
+    var singleResult = pingPong(userInput);
+    var rangeResult = pingPongRange(userInput);
+
+    $("#log").prepend("<li>" + singleResult + "</li>");
+    $("#flashResult").text(singleResult);
     cleanLog();
+    $("#range").text(rangeResult);
   });
 
 });
