@@ -22,6 +22,7 @@ body {
 /*side panels*/
 h2 {
   font-size: 55px;
+  font-family: 'Coda Caption', sans-serif;
 }
 
 /*center column */
@@ -32,9 +33,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+.btn-default {
+  color: white;
+  background-color: #333;
+  font-family: 'Coda Caption', sans-serif;
+}
+
 /*log*/
 #logDiv {
-  height: 60px;
+  height: 70px;
 }
 
 #logDiv h4 {
