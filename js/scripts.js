@@ -62,6 +62,14 @@ $(document).ready(function() {
     $("#range").text(rangeResult);
     $("#flashResult").show();
     $("#flashResult").fadeOut(500);
+    $("#click-here").show();
+    $(".see-hide").text("SEE");
+  });
+
+  $(".see-range").click(function(event) {
+    event.preventDefault();
+    $(".see-hide").text($(".see-hide").text() == 'HIDE' ? 'SEE' : 'HIDE');
+    $(".field").slideToggle();
   });
 
 });
