@@ -1,32 +1,35 @@
 // Business Logic (Back-end)
 var counter = function(userInput) {
   var result = [];
-  for ( var index = 1 ; index <= userInput; index + 1 ) {
+  for ( var index = 1 ; index <= userInput; index += 1 ) {
     result.push(index);
   }
   return result;
-  console.log(result);
 }
 
 
 var pingPong = function(userInput) {
 
-  output = counter(userInput);
+  var userInputs = counter(userInput);
 
-  // for (var index = 1; index <= userInput; index + 1 ) {
+  userInputs.forEach(function(userInput) {
+    parseInt(userInput);
     if ((userInput % 3 === 0) && (userInput % 5 !== 0 )) {
       userInput = "PING";
+      return userInput;
     } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
       userInput = "PONG";
+      return userInput;
     } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
       userInput = "PING-PONG";
+      return userInput;
     } else {
-      result.push(userInput);
+      return userInput;
     }
-    result.push(userInput);
-  // }
 
-  return userInput;
+  });
+
+  return userInputs;
 }
 
 
