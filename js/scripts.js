@@ -5,6 +5,10 @@ var pingPong = function(userInput) {
     userInput = "PING";
   } else if ((userInput % 5 === 0) && (userInput % 3 !== 0 )) {
       userInput = "PONG";
+  } else if ((userInput % 3 === 0) && (userInput % 5 === 0 )) {
+      userInput = "PING-PONG";
+  } else {
+      return userInput
   }
 
   return userInput;
