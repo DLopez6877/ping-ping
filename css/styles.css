@@ -4,15 +4,14 @@ body {
   color: white;
 }
 
+.initially-hidden {
+  display: none;
+}
+
 /*flash area*/
 .flash {
   height: 150px;
   font-size: 140px;
-}
-
-/*log*/
-#logDiv {
-  height: 60px;
 }
 
 /*side panels*/
@@ -25,7 +24,19 @@ h2 {
   background-image: url(../img/pong.gif);
   background-size: cover;
   border: medium solid white;
+  margin-bottom: 20px;
 }
+
+/*log*/
+#logDiv {
+  height: 60px;
+}
+
+/*range display*/
+.clickable:hover {
+  color: #46b8da;
+}
+
 @media screen and (max-width: 1100px)  {
   .flash {
     font-size: 75px;
